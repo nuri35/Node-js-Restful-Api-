@@ -27,9 +27,13 @@ Son olarak uygulamamızdaki mvc yapısı bu şekildedir.
 
 ![alt text](https://www.oguzhanavci.com/upload/resim/mvc-nedir-ne-ise-yarar.jpg)
 
+<h2> 🛠 &nbsp;Kullanılan Teknolojiler</h2>
 
-
-
+<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
+<code><img height="30" src="https://www.gencayyildiz.com/blog/wp-content/uploads/2018/07/NodeJS-520x245.png"></code>
+<code><img height="30" src="https://cms-assets.tutsplus.com/uploads/users/34/posts/29527/preview_image/mongoose.jpg"></code>
+<code><img height="30" src="https://expressjs.com/images/express-facebook-share.png"></code>
+<code><img height="30" src="https://lh3.googleusercontent.com/proxy/XndwHii_XJ-N5NS0GTMHwd7tpIlIUB86bddZPyA-Z7-6BIs13gYZ11EBKY4EPZVMpqFVS3NxnOXHsFEUkeeSqJ_NrWBsTQa6uLXTdGsWFRf6UPx1"></code>
 
 
  
