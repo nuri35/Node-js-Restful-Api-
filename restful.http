@@ -1,0 +1,103 @@
+# GET http://localhost:3000/api/users  
+//yukardan asagı dogru oku 
+
+//dedıgımızde send request dıyerek yanda onun cevabınını gorebılrız ozellıkle boyle arayuzle ugrasmadıgımz zamanlarda bır rest apı yapımında ornegın arayuzle ısımız yok burda post ıcın vs postmane gıtmeye gerek kalmadan burdan ısımızı halledebırlız 
+
+//smdı bız elle gırcegımız ıcın ya buradan yada postmandan vs yapıyoruz kullanıcıya apı suncaz yanı json turunde verıler dolayısıyla arayuze ıhtıyacımız zaten olmucak fakat verıler elle gırılmıcek kullanıcdan alıcaz bız verılerı lınktekı ıstek tıpıne gore ve lınktekı query params yada req.params  vs ıle ılgılı her adımı dusunerek ona bır json verıcez
+
+//ama burda postmanmıs gıbı suan bız gırıyoz ılerıde model uzerınden nesne olusturup routerların ıcınde yapıcaz ıslemlerı 
+
+GET http://localhost:3000/api/users  
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTViMmU5YWRkOTNhZTRmNzFlNjg5MWMiLCJlbWFpbCI6Im51cmllNDc3QGdtYWlsLmNvbSIsImlhdCI6MTYzMzUyODM4OCwiZXhwIjoxNjMzNTMxOTg4fQ.dYqTMt0Cj1iBDGxhLZc0SGRUd31BrCtFzxS7fMP2UUQ
+
+
+
+
+//belkı get ıstegıne ıdlı yapıcam
+###
+GET http://localhost:3000/api/users/835
+###
+
+GET http://localhost:3000/api/users?kullanıcı=true
+
+
+
+###
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "isim":"keresdmas",
+     "UserName":"keremsdsd331",
+    "email":"nurie47assa7aasas@gmail.com",
+     "password":"fensddsersdsd35as3"
+    
+   
+}
+
+
+###
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+    
+    "email":"nurie477@gmail.com",
+     "password":"fener35.33"
+   
+}
+
+
+
+
+
+# POST http://localhost:3000/api/users 
+
+# Content-Type: application/x-www-form-urlencoded
+# //yukardakı gıbı ısım degerını yollucaksam  formdan dıyelım bu sekılde olcak hanı yukarda verıtabanına json olarak kaydedılcek ondan oyle yaptık
+# //sımdı boyle
+
+# //tabıkıde postmanden olsun bu sekılde yaptgımızda verıtabnaına kaydedılmıyordu unutma sadece ornek amacıyla kaydeddıgımız verıyı vs goruruz 
+
+# isim=emre&yas=32
+
+
+
+
+
+
+//ornegın a deıdgım mınleng 3 ama kabul ettı buunun onune gecmek ıcın runvalıdators:True de  findByIdAndUpdate fonskıyonun 3.parametresıne  bak postta calsıyor ama guncelleme gıbı bır ıslemde calsımyıor bunu dersek artık ornegın elemanın uzunlgununu 3 den asagı gıremıcen
+
+###
+PATCH  http://localhost:3000/api/users/615895ecaa390ddce95a678c
+Content-Type: application/json
+
+{
+    "isim":"kerim",
+    "email":"messi_-_nurafddfssi@gmail.com",
+    "password":"sddsdd"
+}
+
+###
+PATCH  http://localhost:3000/api/users/me
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTVhYzVmZmM1ZmM3YzM2OTI0M2U2ZjgiLCJlbWFpbCI6ImdzX0BnbWFpay5jb20iLCJpYXQiOjE2MzMzNTM1MjMsImV4cCI6MTYzMzM1NzEyM30.sLdoSbqjdCZGB_G8xf6ZIy5Srou7Y5dPMzbyoihVN8A
+
+{
+    "isim":"hocalıdskerım"
+}
+
+
+###
+GET http://localhost:3000/api/users/medelete
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTVhYzVmZmM1ZmM3YzM2OTI0M2U2ZjgiLCJlbWFpbCI6ImdzX0BnbWFpay5jb20iLCJpYXQiOjE2MzMzNTM1MjMsImV4cCI6MTYzMzM1NzEyM30.sLdoSbqjdCZGB_G8xf6ZIy5Srou7Y5dPMzbyoihVN8A
+
+# ###
+# DELETE http://localhost:3000/api/users/615356a49f697c316fdsd8a013
+
+
+###
+GET  http://localhost:3000/api/users/deleteAll
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTVhYzVmZmM1ZmM3YzM2OTI0M2U2ZjgiLCJlbWFpbCI6ImdzX0BnbWFpay5jb20iLCJpYXQiOjE2MzMzNDk4OTMsImV4cCI6MTYzMzM1MzQ5M30.-1ZS8_d3Y1QeLxWAIA4F4iJwSL7TUkxe_upeU8JWZmk
+
+
