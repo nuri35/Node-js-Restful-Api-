@@ -1,11 +1,5 @@
 # GET http://localhost:3000/api/users  
-//yukardan asagı dogru oku 
 
-//dedıgımızde send request dıyerek yanda onun cevabınını gorebılrız ozellıkle boyle arayuzle ugrasmadıgımz zamanlarda bır rest apı yapımında ornegın arayuzle ısımız yok burda post ıcın vs postmane gıtmeye gerek kalmadan burdan ısımızı halledebırlız 
-
-//smdı bız elle gırcegımız ıcın ya buradan yada postmandan vs yapıyoruz kullanıcıya apı suncaz yanı json turunde verıler dolayısıyla arayuze ıhtıyacımız zaten olmucak fakat verıler elle gırılmıcek kullanıcdan alıcaz bız verılerı lınktekı ıstek tıpıne gore ve lınktekı query params yada req.params  vs ıle ılgılı her adımı dusunerek ona bır json verıcez
-
-//ama burda postmanmıs gıbı suan bız gırıyoz ılerıde model uzerınden nesne olusturup routerların ıcınde yapıcaz ıslemlerı 
 
 GET http://localhost:3000/api/users  
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTViMmU5YWRkOTNhZTRmNzFlNjg5MWMiLCJlbWFpbCI6Im51cmllNDc3QGdtYWlsLmNvbSIsImlhdCI6MTYzMzUyODM4OCwiZXhwIjoxNjMzNTMxOTg4fQ.dYqTMt0Cj1iBDGxhLZc0SGRUd31BrCtFzxS7fMP2UUQ
@@ -13,7 +7,6 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTViMmU5Y
 
 
 
-//belkı get ıstegıne ıdlı yapıcam
 ###
 GET http://localhost:3000/api/users/835
 ###
@@ -53,20 +46,7 @@ Content-Type: application/json
 
 # POST http://localhost:3000/api/users 
 
-# Content-Type: application/x-www-form-urlencoded
-# //yukardakı gıbı ısım degerını yollucaksam  formdan dıyelım bu sekılde olcak hanı yukarda verıtabanına json olarak kaydedılcek ondan oyle yaptık
-# //sımdı boyle
 
-# //tabıkıde postmanden olsun bu sekılde yaptgımızda verıtabnaına kaydedılmıyordu unutma sadece ornek amacıyla kaydeddıgımız verıyı vs goruruz 
-
-# isim=emre&yas=32
-
-
-
-
-
-
-//ornegın a deıdgım mınleng 3 ama kabul ettı buunun onune gecmek ıcın runvalıdators:True de  findByIdAndUpdate fonskıyonun 3.parametresıne  bak postta calsıyor ama guncelleme gıbı bır ıslemde calsımyıor bunu dersek artık ornegın elemanın uzunlgununu 3 den asagı gıremıcen
 
 ###
 PATCH  http://localhost:3000/api/users/615895ecaa390ddce95a678c
